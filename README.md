@@ -7,7 +7,7 @@ SOAP example. It simulates the search flights operation for an airline system. F
 
 ### With Docker
 1. Build the image: `docker compose build`
-2. Generate the WSDL file: `docker compose run --rm cli generate_wsdl.php`. It will generate `BankAccountService.wsdl`
+2. Generate the WSDL file: `docker compose run --rm cli generate_wsdl.php`. It will generate `AirlineService.wsdl`
 3. Start the SOAP server: `docker compose up server`. It will be reachable at `http://localhost:8080`
 4. In a different terminal, run the client: `docker compose run --rm cli client.php`. It will show:
   - `SearchFlights`: the hardcoded flights, the XML request, and the XML response
